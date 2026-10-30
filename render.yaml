@@ -1,0 +1,23 @@
+# Render Blueprint — one web service serving both the API and the React build.
+# Deploy: Render dashboard -> New -> Blueprint -> select this repository.
+services:
+  - type: web
+    name: multi-document-intelligence-workbench
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_PATH
+        value: ./data/workbench.db
+      - key: AI_PROVIDER
+        value: mock # set to "anthropic" and add ANTHROPIC_API_KEY to use Claude
+      - key: ANTHROPIC_API_KEY
+        sync: false # entered in the Render dashboard; never committed
+      - key: ANTHROPIC_MODEL
+        value: claude-sonnet-4-5

@@ -1,0 +1,11 @@
+DRIVING LICENCE - SYNTHETIC SAMPLE (NOT A REAL DOCUMENT)
+Issuing Authority: Regional Transport Office, Pune (demo)
+
+Licence Number: MH12-2014-0045821
+Name: Priya S. Sharma
+Date of Birth: 12/04/1988
+Address: 14 Lotus Lane, Koregaon Park, Pune 411002
+Licence Class: LMV (Light Motor Vehicle)
+Issue Date: 01/04/2014
+Expiry Date: 31/03/2026
+Blood Group: B+
